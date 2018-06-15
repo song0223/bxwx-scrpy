@@ -1,9 +1,0 @@
-Server: nginx
-Date: Fri, 15 Jun 2018 01:20:23 GMT
-Content-Type: text/html
-Last-Modified: Mon, 11 Jun 2018 08:32:32 GMT
-Etag: "5b1e33a0-5f99"
-X-Via: 1.1 localhost.localdomain (random:352183 Fikker/Webcache/3.7.6)
-Content-Encoding: gzip
-Vary: Accept-Encoding
-Cache-Control: max-age=60

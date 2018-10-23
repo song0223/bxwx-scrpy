@@ -20,11 +20,12 @@ class BxwxcjPipeline(object):
                 title = item['title']
                 author = item['author']
                 is_ending = item['is_ending']
+                image = item['image']
                 type = item['type']
                 bxwx_id = item['bxwx_id']
                 introduction = item['introduction']
                 bxwx_url = item['bxwx_url']
-                Sql.insert_xs(title, author, 0, is_ending, type, bxwx_id, introduction, bxwx_url)
+                Sql.insert_xs(title, author, image, is_ending, type, bxwx_id, introduction, bxwx_url)
                 print('开始录入小说--标题：' + title)
 
         if isinstance(item, BxwxzjItem):

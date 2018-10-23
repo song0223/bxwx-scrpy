@@ -72,6 +72,8 @@ class Myspider(scrapy.Spider):
         xs_introduction = xs_introduction.replace('bxwx9.org', '')
         items['introduction'] = xs_introduction.replace('\xa0', '')# 小说简介
 
+        items['image'] = soup.select_one('.picborder')['src']
+
         url = response.url.replace('binfo', 'b')
         url = url[:-4] + '/index.html'# 章节列表url
         yield items

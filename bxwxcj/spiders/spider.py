@@ -33,8 +33,8 @@ class Myspider(scrapy.Spider):
 
     def parse(self, response):
         soup = BeautifulSoup(response.text, 'lxml')
-        #max_num = soup.select_one('#pagelink .last').text# 获取排行榜最大页码
-        max_num = 2
+        max_num = soup.select_one('#pagelink .last').text# 获取排行榜最大页码
+
         for i in range(1, int(max_num) + 1):
             url =  str(self.bash_url)[:-1]
             base_url = url + str(i) + self.bashurl# 得到所有链接
